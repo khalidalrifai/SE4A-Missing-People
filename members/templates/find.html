@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+  background-color: #cccccc;
+}
+</style>
+</head>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Missing People</title>
+  </head>
+</html>
+
+<body>
+
+    <div class="container">
+    <center><div class="card" style="width: 28rem;">
+        <div class="py-5 text-center bg-secondary text-white">
+            <div class="card-header">
+                <h1 class="mb-3">Search Missing Persons</h1>
+            </div>
+            <form name="UploadForm" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+              {{form}}
+            <input type="submit" class ="btn btn-danger" 
+            value ="Upload">
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+
+<form action="Search/" method="post">
+  {% csrf_token %}
+<body>
+  <button style="width:50%", class="button button1" type="submit">Search</button>
+</form>
